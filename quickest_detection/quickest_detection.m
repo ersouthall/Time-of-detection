@@ -1,3 +1,8 @@
+function Run_quickest_detection(step)
+%INPUTS
+%run: simulation number (1:500)
+%step: select length of time-series, step is the sample frequency (of the original data of length 500)
+
 % read data (from csv files)
 FixData=readmatrix(strcat('../data/Fix_data.csv')); 
 FixCHANGEData=readmatrix(strcat('../data/FixChange_data.csv')); 
@@ -9,12 +14,9 @@ FixData = FixData(2:end, 2:end);
 FixCHANGEData = FixCHANGEData(2:end, 2:end);
 ExtData = ExtData(2:end, 2:end);
 
-% Select length of time-series, step is the sample frequency
-% Paper uses step: 2 (sizeT = 250), 5 (100), 10 (50), 25 (20)
-step = 5;
 sizeT = Time/step;
 
-% up_to_bif =sizeT*0.9;
+% up_to_bif =sizeT*0.8;
 FixData_T = FixData(:, 1:step:Time);
 FixCHANGEData_T = FixCHANGEData(:, 1:step:Time);
 ExtData_T = ExtData(:, 1:step:Time);
@@ -64,3 +66,4 @@ save(strcat('../data/quickest_detection/log_quickest_detection_FIXCHANGE', ...
 
 save(strcat('../data/quickest_detection/log_quickest_detection_EXT', ...
     string(sizeT)), 'log_RR_ext')
+end
