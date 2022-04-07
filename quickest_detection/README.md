@@ -2,10 +2,9 @@
 
 MATLAB files used to implement the Quickest Detection method, introduced by Shiryaev & Roberts, 1961
 
-** Need to add consecutive files
 # How to use
 
-To run analysis, run `quickest_detection.m`. Below is an example bash script demonstrating how to run:
+To run analysis to get the likelihood ratio, run `quickest_detection.m`. Below is an example bash script demonstrating how to run:
 
 ```
 #!/bin/bash
@@ -17,4 +16,9 @@ for STEPS in 2 5 10 25; do
 done
 ```
 
+After, run `QD_consecutive.py` to perform the consecutive point constraint. Below is an example bash script demonstrating how to run:
+```
+#!/bin/bash
 
+python QD_consecutive.py
+```
