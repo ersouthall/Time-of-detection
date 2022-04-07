@@ -12,7 +12,7 @@ from itertools import product
 # locate simulation files
 usr = '../data/'
 simulation_files = glob.glob(usr+'*.npy')
-SIS_dataFixChange = np.load([file for file in simulation_files if 'FixChange_SIS_500gamm' in file][0], allow_pickle = True)
+SIS_dataFixChange = np.load([file for file in simulation_files if 'FixChange_SIS_500' in file][0], allow_pickle = True)
 SIS_dataFix = np.load([file for file in simulation_files if 'Fix_SIS_500' in file][0], allow_pickle =True)
 SIS_dataExt = np.load([file for file in simulation_files if 'Ext_SIS_500' in file][0], allow_pickle =True)
 
