@@ -9,8 +9,7 @@ FixData = FixData(2:end, 2:end);
 FixCHANGEData = FixCHANGEData(2:end, 2:end);
 ExtData = ExtData(2:end, 2:end);
 
-% Select length of time-series
-% If step is the sample frequency (taking every 5th data point)
+% Select length of time-series, step is the sample frequency
 % Paper uses step: 2 (sizeT = 250), 5 (100), 10 (50), 25 (20)
 step = 5;
 sizeT = Time/step;
