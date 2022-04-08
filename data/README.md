@@ -25,6 +25,7 @@ To run the simulations and generate the synthetic data, run `gillespie_run_SIS_m
 
 N=10000
 beta0=1
+gamma=0.2
 realisations=500
 
 for simType in "Ext" "Fix" "FixChange"; do
