@@ -18,11 +18,16 @@ Common parameters shared in all simulations:
 
 # How to use
 
-To run the simulations and generate the synthetic data, run `.py`. Below is an example bash script demonstrating how to run:
+To run the simulations and generate the synthetic data, run `gillespie_run_SIS_model.py`. Below is an example bash script demonstrating how to run:
 
 ```
 #!/bin/bash
 
-python .py
+N=10000
+beta0=1
+realisations=500
 
+for simType in "Ext" "Fix" "FixChange"; do
+    python gillespie_run_SIS_model.py ${N} ${beta0} ${gamma} ${simType} ${realisations}
+done
 ```
