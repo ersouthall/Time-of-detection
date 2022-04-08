@@ -13,3 +13,10 @@ for TIME in 20 50 100 250; do
     python run_changing_pvalue.py  ${TIME}
 done
 ```
+
+After, run `pvalue_consecutive.py` to perform the consecutive point constraint. Below is an example bash script demonstrating how to run:
+```
+#!/bin/bash
+
+python pvalue_consecutive.py
+```
