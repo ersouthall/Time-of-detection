@@ -29,7 +29,7 @@ Github repository to accompany article "How early can an upcoming critical trans
 <h2 id="about-the-project"> Abstract</h2>
 
 The real-time application of early warning signals (EWSs) has often been overlooked; many studies show the presence of EWSs but do not detect when the trend becomes significant.  Knowing if the signal can be detected _early_ enough is of critical importance for the applicability of EWSs. Detection methods which present this analysis are sparse and are often developed for each individual study. Here, we provide a validation and summary of a range of currently available detection methods developed from EWSs. We include an additional constraint, which requires multiple time-series points to satisfy the algorithms' conditions before a detection of an approaching critical transition can be flagged.  We apply this procedure to a simulated study of an infectious disease system undergoing disease elimination. For each detection algorithm we select the hyper-parameter which minimises classification errors using ROC analysis. We consider the effect of time-series length on these results, finding that all algorithms become less accurate as the access to available data decreases.  We compare EWS detection methods with alternate algorithms found from the change-point analysis literature and assess the suitability of using change-point analysis to detect abrupt changes in a system's steady state. 
-
+[README.md](Time-of-detection/data/README.md)
 <h2 id="folder-structure"> Folder Structure</h2>
 
     data
