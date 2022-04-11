@@ -6,14 +6,9 @@ Reduces the total number of compositions of EWSs by taking composite EWSs which 
 Applies the consecutive point strategy with all EWSs in the reduced dataset. 
 
 # How to use
-Optional: reduced the total number of composite statistics by taking those which have an AUC>0.6 using `find_significant_composites.py`. Below is an example bash script demonstrating how to run:
-```
-#!/bin/bash
+Optional: reduced the total number of composite statistics by taking those which have an AUC>0.6 using `reducedIndicators=0.6`  in the file `logistic_with_consec.py`.
 
-python run_logistic_EWSscombination.py $i
-```
-
-Then run the consecutive point method using `logistic_with_consec.py`. Below is an example bash script demonstrating how to run:
+Then run the consecutive point method.  Below is an example bash script demonstrating how to run:
 ```
 #!/bin/bash
 
