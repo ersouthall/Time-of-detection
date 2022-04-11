@@ -33,7 +33,7 @@ The real-time application of early warning signals (EWSs) has often been overloo
 <h2 id="folder-structure"> Folder Structure</h2>
 
     data
-    ├── [README.md](./data/README.md)
+    ├── [README.md](data/README.md)
     │   ├── raw_data
     │   │   ├── phone
     │   │   │   ├── accel
