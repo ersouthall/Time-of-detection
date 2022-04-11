@@ -43,9 +43,8 @@ def loop_EWSs_store_results_QD(df, consecutive_length,realisations, time_range, 
 
             try:
 
-                pval_sim = df.values[colname,:]
-#                 print(aa)
-                start_res, finish_res, total_res = exceed_threshold_consecutive_years(stat_timeseries = pval_sim, 
+                qd_sim = df.values[colname,:]
+                start_res, finish_res, total_res = exceed_threshold_consecutive_years(stat_timeseries = qd_sim, 
                                                                             years = time_range,
                                                                      consecutive_length=consecutive_length,
                                                                            threshold=aa)
@@ -69,3 +68,5 @@ def loop_EWSs_store_results_QD(df, consecutive_length,realisations, time_range, 
                                                        columns=A,
                                                        index = [str(colname)])
     return {'start': STARTresults, 'end': ENDresults, 'total': TOTALresults}
+
+
