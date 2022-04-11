@@ -9,9 +9,6 @@ def MovingEntropy(x, w):
     ## Returns a 2-d numpy array prob with element prob[i,j] returning the
     ## probability of being in state j + min(x) at time t[i]. Assumes timesteps are equal.
     def MovingProb(x, w):
-
-        #def myround(x):
-        #    return np.round(base * np.round(x / base), prec)
         xr = np.round(x)
         prob = np.zeros((len(x), int(np.nanmax(xr) - np.nanmin(xr)) + 1))
         y = xr - np.nanmin(xr)

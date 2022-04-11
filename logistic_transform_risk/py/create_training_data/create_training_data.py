@@ -1,7 +1,8 @@
+import sys
+sys.path.append("..")
 import helper as h
 import gillespie_SIS as SIS
 from multiprocessing import Pool
-import sys
 
 # Run Gillespie simulations. Use simulation_parameters.csv to give parameter choices for each realisation
 # Repeat for realisations start to finish

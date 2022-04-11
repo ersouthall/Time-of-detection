@@ -39,7 +39,7 @@ def single_simulation(folder_output, params,simulation_params, simulation_number
         (params['Time']+params['BurnTime']),0.1), fill_value = 0)
     result = pd.merge(df_delta_reindex, df_daily, left_index = True, right_index = True)
     result['Time'] = np.arange(0, (params['Time']+params['BurnTime']), 0.1)
-    result.to_csv(folder_output+"/data_"+str(simulation_number)+".csv")
+    result.to_csv(folder_output+"data_"+str(simulation_number)+".csv")
         
 def gillespieSIS(params, function):
     np.random.seed()

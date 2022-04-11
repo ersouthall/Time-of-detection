@@ -11,15 +11,15 @@ def get_ews(x, windowsize, ac_lag, se = True, kc = True, mv_method="uniform",
     Calculate early-warning signals from time series data.
 
     INPUT
-    :param x: time series data (either 1-dimensional numpy array or list)
-    :param windowsize: integer number of time points in moving window
-    :param ac_lag: integer lag used to calculated the autocovariance, autocorrelation and decay time
-    :param se: Boolean. If True calculate the moving Shannon entropy. This is significantly slower
-    :param kc: Boolean. If True calculate the moving Kolmogorov complexity. This is around 10x slower
-    :param mv_method, can be "uniform", "gaussian" or "exp"
-    :param detrend_pre. If True the data is already detrended and no detrending will be performed in this function.
-    :param original_data. The un-detrended data can be inputted and used for the calculation of the mean
-    :param center. For the moving window calculations, the calculation can either be done center = True or for right-centered window averages (center = False)
+    :param x: 1-dimensional arr or list. Time series data
+    :param windowsize: integer. Number of time points in moving window
+    :param ac_lag: integer. Lag used to calculated the autocovariance, autocorrelation and decay time
+    :param se: boolean. If True calculate the moving Shannon entropy. This is significantly slower
+    :param kc: boolean. If True calculate the moving Kolmogorov complexity. This is around 10x slower
+    :param mv_method, str. Method for window averages, can be "uniform", "gaussian" or "exp"
+    :param detrend_pre. boolean. If True the data is already detrended and no detrending will be performed in this function.
+    :param original_data. 1-dimensional arr or list. The un-detrended data can be inputted and used for the calculation of the mean
+    :param center, boolean. For the moving window calculations, the calculation can either be done center = True or for right-centered window averages (center = False)
     RETURN
     : dict containing all early-warning signals and original time series
     '''
