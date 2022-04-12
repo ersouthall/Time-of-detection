@@ -22,11 +22,33 @@ The real-time application of early warning signals (EWSs) has often been overloo
 
 <h2 id="about-the-project"> About the project</h2>
 EWSs are model-independent time-series methods for detecting when a system goes through a critical transition. Here we present the code for the following online detection algorithms: 
-- 2-sigma method (Drake & Griffen, 2010)
-- Changing p-value (Harris et al., 2020)
-- Logistic Transform Risk (Brett & Rohani, 2020)
-- Quickest Detection (Shiryaev, 1961)
-- Maximum Likelihood Estimation
+<ul>
+  <li>
+    <p>
+    2-sigma method (Drake & Griffen, 2010)
+    </p>
+  </li>
+ <li>
+    <p>
+    Changing p-value (Harris et al., 2020)
+    </p>
+  </li>
+ <li>
+    <p>
+    Logistic Transform Risk (Brett & Rohani, 2020)
+    </p>
+  </li>
+ <li>
+    <p>
+    Quickest Detection (Shiryaev, 1961)
+    </p>
+  </li>
+ <li>
+    <p>
+    Maximum Likelihood Estimation
+    </p>
+  </li>
+</ul>
 
 and investigate how early we can detect R_0 = 1, in order to inform the path towards disease elimination. We adapt all algorithms to include a consecutive point strategy and find the optimal number of consectuive points required to minimise classification errors. 
 <h2 id="folder-structure"> Folder structure</h2>
@@ -53,7 +75,7 @@ and investigate how early we can detect R_0 = 1, in order to inform the path tow
     ├── pvalue_consecutive.py
     └── run_changing_pvalue.py
 
-[Run the logistic transform risk method (Brett & Rohani, 2021)](./logistic_transform_risk/py/README.md)
+[Run the logistic transform risk method (Brett & Rohani, 2021)](./logistic_transform_risk/README.md)
 
     logistic_transform_risk
     ├── data
@@ -114,11 +136,27 @@ and investigate how early we can detect R_0 = 1, in order to inform the path tow
 Stochastic simulations of the testing data is made using the Gillespie Algorithm [see further information and parameter choices](./data/README.md)
 
 We test each online detection algorithm with data that is bifurcating (R_0 goes through 1), known as:
-- EXT: disease extinction, $R_0$ reduces from 5 to 0 by slowly decreasing $\beta$ at a rate $1/500$. This is an example of a bifurcating simulation.
-and with null datasets which do not undego a bifurcation: 
-- NEXT: disease <em>not</em> extinction (also called "fixchanging" in code). As in EXT, but $\beta$ stops changing when $R_0 = 1.3$. $R_0$ stays fixed at this value for the rest of the simulation. This is an example of a null simulation. 
-- FIX: endemic disease. Parameters do not change in time and are fixed throughout the simulation. This is an example of a null simulation. 
 
+<ul>
+  <li>
+    <p>
+    EXT: disease extinction, $R_0$ reduces from 5 to 0 by slowly decreasing $\beta$ at a rate $1/500$. This is an example of a bifurcating simulation.
+      </p>
+  </li>
+  </ul>
+and with null datasets which do not undego a bifurcation: 
+<ul>
+  <li>
+    <p>
+    NEXT: disease <em>not</em> extinction (also called "fixchanging" in code). As in EXT, but $\beta$ stops changing when $R_0 = 1.3$. $R_0$ stays fixed at this value for the rest of the simulation. This is an example of a null simulation. 
+      </p>
+  </li>
+   <li>
+    <p>
+  FIX: endemic disease. Parameters do not change in time and are fixed throughout the simulation. This is an example of a null simulation. 
+      </p>
+  </li>
+ </ul>
 A true positive detection occurs when we correctly detection disease elimination with Ext data. 
 A true negative detection occurs when we (correctly) do not detection disease elimination with the null datasets. 
 
