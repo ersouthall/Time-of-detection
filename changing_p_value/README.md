@@ -3,7 +3,7 @@
 Python files used to implement the changing p-value method, introduced by Harris, 2020
 
 <p align="center">
-  <img src="algorithm.png" alt="" width="45%" height="45%">
+  <img src="algorithm.png" alt="" width="80%">
 </p>
 
 # How to use
