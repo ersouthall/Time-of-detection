@@ -2,6 +2,10 @@
 
 MATLAB files used to implement the Quickest Detection method, introduced by Shiryaev & Roberts, 1961
 
+<p align="center">
+  <img src="algorithm.png" alt="" width="80%">
+</p>
+
 # How to use
 
 To run analysis to get the likelihood ratio, run `quickest_detection.m`. Below is an example bash script demonstrating how to run:
