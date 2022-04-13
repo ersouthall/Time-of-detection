@@ -49,7 +49,7 @@ EWSs are model-independent time-series methods for detecting when a system goes 
   </li>
 </ul>
 
-and investigate how early we can detect R_0 = 1, in order to inform the path towards disease elimination. We adapt all algorithms to include a consecutive point strategy and find the optimal number of consectuive points required to minimise classification errors. 
+and investigate how early we can detect R_0 = 1, in order to inform the path towards disease elimination. We adapt all algorithms to include a consecutive point strategy and find the optimal number of consecutive points required to minimise classification errors. 
 <h2 id="folder-structure"> Folder structure</h2>
 
 [Create sythentic data (Ext, NExt and Fix)](./data/README.md)
@@ -144,7 +144,7 @@ and investigate how early we can detect R_0 = 1, in order to inform the path tow
 
 <h2 id="dataset"> Sythetic Dataset</h2>
 
-Stochastic simulations of the testing data is made using the Gillespie Algorithm [see further information and parameter choices](./data/README.md)
+Stochastic simulations of the testing data are made using the Gillespie Algorithm [see further information and parameter choices](./data/README.md)
 
 We test each online detection algorithm with data that is bifurcating (R_0 goes through 1), known as:
 
@@ -155,7 +155,7 @@ We test each online detection algorithm with data that is bifurcating (R_0 goes 
       </p>
   </li>
   </ul>
-and with null datasets which do not undego a bifurcation: 
+and with null datasets which do not undergo a bifurcation: 
 <ul>
   <li>
     <p>
@@ -168,8 +168,8 @@ and with null datasets which do not undego a bifurcation:
       </p>
   </li>
  </ul>
-A true positive detection occurs when we correctly detection disease elimination with Ext data. 
-A true negative detection occurs when we (correctly) do not detection disease elimination with the null datasets. 
+A true positive detection occurs when we correctly detect disease elimination with Ext data. 
+A true negative detection occurs when we (correctly) do not detect disease elimination with the null datasets. 
 
 <h2 id="references"> References</h2>
 
