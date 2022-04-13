@@ -10,7 +10,6 @@ Github repository to accompany article "How early can an upcoming critical trans
     <li><a href="#about-the-project"> ➤ About the project</a></li>
     <li><a href="#folder-structure"> ➤ Folder Structure</a></li>
     <li><a href="#dataset"> ➤ Sythentic Dataset</a></li>
-    <li><a href="#results-and-discussion"> ➤ Results and Discussion</a></li>
     <li><a href="#references"> ➤ References</a></li>
   </ol>
 </details>
@@ -130,6 +129,18 @@ and investigate how early we can detect R_0 = 1, in order to inform the path tow
     ├── Run_MLE_changepoint.m
     ├── central_difference_2nd.m
     └── confidence_interval_smoothing.m
+
+[Create the figures from the paper](./plots/README.md)
+
+    plots
+    ├── README.md
+    ├── funcs_plots.py
+    ├── plots_2sigma_figs.ipynb
+    ├── pvalue_threshold_plots.ipynb
+    ├── plots_logistic_figs.ipynb
+    ├── quickest_detection_plots.ipynb
+    ├── plots_mle_figs.ipynb
+    └── AUC_best_consecutive.ipynb
 
 <h2 id="dataset"> Sythetic Dataset</h2>
 
