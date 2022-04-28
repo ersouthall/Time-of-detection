@@ -9,7 +9,7 @@ Github repository to accompany article "How early can an upcoming critical trans
     <li><a href="#abstract"> ➤ Abstract</a></li>
     <li><a href="#about-the-project"> ➤ About the project</a></li>
     <li><a href="#folder-structure"> ➤ Folder Structure</a></li>
-    <li><a href="#dataset"> ➤ Sythentic Dataset</a></li>
+    <li><a href="#dataset"> ➤ Synthetic Dataset</a></li>
     <li><a href="#references"> ➤ References</a></li>
   </ol>
 </details>
@@ -52,7 +52,7 @@ EWSs are model-independent time-series methods for detecting when a system goes 
 and investigate how early we can detect R_0 = 1, in order to inform the path towards disease elimination. We adapt all algorithms to include a consecutive point strategy and find the optimal number of consecutive points required to minimise classification errors. 
 <h2 id="folder-structure"> Folder structure</h2>
 
-[Create sythentic data (Ext, NExt and Fix)](./data/README.md)
+[Create synthetic data (Ext, NExt and Fix)](./data/README.md)
 
     data
     ├── README.md
@@ -142,7 +142,7 @@ and investigate how early we can detect R_0 = 1, in order to inform the path tow
     ├── plots_mle_figs.ipynb
     └── AUC_best_consecutive.ipynb
 
-<h2 id="dataset"> Sythetic Dataset</h2>
+<h2 id="dataset"> Synthetic Dataset</h2>
 
 Stochastic simulations of the testing data are made using the Gillespie Algorithm [see further information and parameter choices](./data/README.md)
 
